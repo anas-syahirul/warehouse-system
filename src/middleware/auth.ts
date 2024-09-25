@@ -18,7 +18,6 @@ export const verifyToken = async (
       token = token.slice(7, token.length).trimLeft();
     }
 
-    // Pastikan bahwa JWT_SECRET ada sebelum melakukan verifikasi
     const secretKey = process.env.JWT_SECRET;
 
     if (!secretKey) {
@@ -31,7 +30,6 @@ export const verifyToken = async (
 
     const verified = jwt.verify(token, secretKey);
     res.locals.user = verified;
-    console.log(verified);
     next();
   } catch (error) {
     if (error instanceof Error) {
