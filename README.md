@@ -1,6 +1,6 @@
-# 🚀 Warehouse Management REST API
+# 🚀 Warehouse System REST API
 
-This is a REST API for managing warehouse operations built with **ExpressJS** and **TypeScript**, integrated with **PostgreSQL** for data management. The API supports operations for managing Users, Items, and Mutations (inbound/outbound stock movements).
+This is a REST API for managing warehouse operations built with **ExpressJS** and **TypeScript**, integrated with **PostgreSQL** for data management. The API supports operations for managing Users, Items(barang), and Mutations (inbound/outbound stock movements).
 
 ## 🛠 Prerequisites
 
